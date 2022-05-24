@@ -1,5 +1,14 @@
-//购买股票
-function buyStock(
+# DRStock
+
+## contract
+
+dev endpoint: `http://18.180.227.173:8545/`
+
+### DRStock `0xD25066df53806c8f79F9D9BBECd22D91a91Bb112`
+
+**Function**
+        
+-buyStock(                        //购买股票
         address payable account,  //购买者地址
         uint256 amount,           //总金额
         uint256 nonce,            //nonce
@@ -11,14 +20,16 @@ function buyStock(
         bytes32 r,                //r
         bytes32 s                 //s
     )
+
+- nonceOf(address): 获取某个地址的nonce值
+    * address: 输入地址
+
+
     
-//获取nonce
-function nonceOf(address account)       //用户地址
-    
-//管理取钱
-function adminClaim(address payable account,  //接受地址
-                            uint256 amount    //提取金额
-                            )
+
+- adminClaim(address payable account,   //接收地址
+               uint256 amount)          //提取金额
+                            
                             
 //根据索引获取投资者信息
-function getInvestor(uint256 index)   //投资索引
+-getInvestor(uint256 index)   //投资索引
