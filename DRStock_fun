@@ -1,4 +1,4 @@
-//购买股票
+## 购买股票
 function buyStock(
         address payable account,  //购买者地址
         uint256 amount,           //总金额
@@ -13,7 +13,7 @@ function buyStock(
     )
     
 //获取nonce
-function nonceOf(address account)
+function nonceOf(address account)       //用户地址
     
 //管理取钱
 function adminClaim(address payable account,  //接受地址
