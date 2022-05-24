@@ -42,7 +42,7 @@ dev endpoint: `http://18.180.227.173:8545/`
 
 ```solidity
 event BuyStock(address account, string stockCode, string unitPrice, uint256 amount, uint8 expires, uint8 status, uint256 index, uint256 timestamp);
-    event AdminClaim(address from, address to, uint256 amount, uint256 timestamp);
+event AdminClaim(address from, address to, uint256 amount, uint256 timestamp);
 ```
 
 
