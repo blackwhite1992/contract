@@ -6,6 +6,8 @@ dev endpoint: `http://18.180.227.173:8545/`
 
 ### DRStock `0xD25066df53806c8f79F9D9BBECd22D91a91Bb112`
 
+
+
 **Function**
         
 ## 用户来购买股票
@@ -34,3 +36,13 @@ dev endpoint: `http://18.180.227.173:8545/`
 ## 根据索引获取投资者信息
 - getInvestor(uint256 index)   
     * index: 投资者索引
+
+
+**Event**
+
+```solidity
+event BuyStock(address account, string stockCode, string unitPrice, uint256 amount, uint8 expires, uint8 status, uint256 index, uint256 timestamp);
+    event AdminClaim(address from, address to, uint256 amount, uint256 timestamp);
+```
+
+
