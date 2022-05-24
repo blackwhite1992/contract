@@ -8,8 +8,8 @@ dev endpoint: `http://18.180.227.173:8545/`
 
 **Function**
         
-- buyStock(                        //购买股票
-        address payable account,  //购买者地址
+** 购买股票
+- buyStock(address account,  
         uint256 amount,           //总金额
         uint256 nonce,            //nonce
         string memory stockCode,  //股票代码
@@ -20,6 +20,7 @@ dev endpoint: `http://18.180.227.173:8545/`
         bytes32 r,                //r
         bytes32 s                 //s
     )
+    * account： //购买者地址
 
 - nonceOf(address): 获取某个地址的nonce值
     * address: 输入地址
