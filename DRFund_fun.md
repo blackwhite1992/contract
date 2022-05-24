@@ -7,7 +7,7 @@ dev endpoint: `http://18.180.227.173:8545/`
 
 **Function**
       
-# 用户取钱
+## 用户取钱
 - claim(address account, uint256 amount, uint256 nonce, string memory stockCode, uint256 index, uint8 v, bytes32 r, bytes32 s) 
   * account:用户地址
   * amount: 金额
@@ -18,11 +18,11 @@ dev endpoint: `http://18.180.227.173:8545/`
   * r: r
   * s: s
 
-# 管理员取钱
+## 管理员取钱
 - ownerClaim(address account, uint256 amount)
   * account：接收者地址
   * amount:提取金额
 
-# 获取nonce值
+## 获取nonce值
 - nonceOf(address): 获取某个地址的nonce值
     * address: 输入地址
