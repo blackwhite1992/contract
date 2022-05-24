@@ -1,4 +1,4 @@
-## 购买股票
+//购买股票
 function buyStock(
         address payable account,  //购买者地址
         uint256 amount,           //总金额
