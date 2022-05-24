@@ -1,3 +1,4 @@
+```json
 [
 	{
 		"inputs": [
@@ -246,3 +247,4 @@
 		"type": "function"
 	}
 ]
+```
