@@ -26,3 +26,10 @@ dev endpoint: `http://18.180.227.173:8545/`
 ## 获取nonce值
 - nonceOf(address): 获取某个地址的nonce值
     * address: 输入地址
+
+**Event**
+
+```solidity
+event Claim(address from, address to, uint256 amount, uint256 nonce, string stockCode, uint256 index, uint256 timestamp);
+event OwnerClaim(address from, address to, uint256 amount, uint256 timestamp);
+```
