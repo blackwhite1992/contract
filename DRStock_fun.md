@@ -26,10 +26,9 @@ dev endpoint: `http://18.180.227.173:8545/`
 
 
 # 管理提钱
-- adminClaim(address payable account,  
-               uint256 amount)          
-               * account:  接收地址
-               * amount:  提取金额
+- adminClaim(address payable account,uint256 amount)          
+ * account:  接收地址
+ * amount:  提取金额
                             
                             
 # 根据索引获取投资者信息
