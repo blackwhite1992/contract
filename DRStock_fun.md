@@ -8,7 +8,7 @@ dev endpoint: `http://18.180.227.173:8545/`
 
 **Function**
         
--buyStock(                        //购买股票
+- buyStock(                        //购买股票
         address payable account,  //购买者地址
         uint256 amount,           //总金额
         uint256 nonce,            //nonce
