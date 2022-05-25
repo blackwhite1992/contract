@@ -5,7 +5,7 @@
 ### 通用响应
 ```json
     {
-    "code": 200,
+   "code": 200,
    "message": "",
    "result": {}
     }
@@ -22,18 +22,19 @@
 
 ### 购买stock  
 POST /api/buyStock 
+
 req
 ```json
 {
   "account": "string",
   "chainId": "string",
-  "expires": 0,
+  "expires": 0,     //到期时间 15天 30天
   "nonce": 0,
-  "number": 0,
-  "status": 0,
-  "stockCode": "string",
-  "totalPrice": 0,
-  "unitPrice": "string"
+  "number": 0,      //购买数量 100的倍数
+  "state": 0,      // 0做空 1做多
+  "stockCode": "string",    //股票代码
+  "totalPrice": 0,          //总价
+  "unitPrice": "string"     //单价
 }
 ```
 
@@ -82,6 +83,7 @@ res
 
 ### 用户取钱
 POST  /api/getFundClaim
+
 req
 ```json
 {
@@ -112,6 +114,11 @@ res
 ### 获取可用余额
 GET /api/getStockAmount
 
+req
+|参数|类型|备注|
+|:-:|:-:|:-:|
+|`stockCode `|`string`|股票代码|
+
 res
 ```json
 {
@@ -126,6 +133,7 @@ res
 
 ### 根据股票代码和时间查询价格信息
 GET /api/getStockInfo
+
 req
 |参数|类型|备注|
 |:-:|:-:|:-:|
@@ -143,21 +151,22 @@ res
       "300001.sz"
     ],
     "now_price": 14.9500000001,
-    "days": 30,
-    "theoretical": 5.3575
+    "days": 30,             //时间 15天 30天
+    "theoretical": 5.3575   //期权费
   }
 }
 ```
 
 ### 用户平仓
 POST /api/sellStock
+
 req
 ```json
 {
   "account": "1",     
-  "closePrice": "1",
-  "stockCode": "1",
-  "stockId": 0
+  "closePrice": "1",    //平仓价格
+  "stockCode": "1", 
+  "stockId": 0          //股票链index
 }
 ```
 
