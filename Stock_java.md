@@ -89,7 +89,7 @@ req
 {
   "account": "1",
   "chainId": "1",
-  "index": 0,
+  "index": 0,   //股票链index
   "nonce": 0,
   "stockCode": "1"
 }
