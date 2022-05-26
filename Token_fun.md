@@ -11,4 +11,10 @@ dev endpoint: `http://18.180.227.173:8545/`
   * spender: 被授权合约地址
   * amount: 授权额度
       
+## 查询授权额度
+- allowance(address owner, address spender)
+ * owner 授权合约地址
+ * spender 被授权合约地址
 
+## 查询地址拥有代币数量
+- balanceOf(address account)
