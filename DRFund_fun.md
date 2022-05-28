@@ -3,7 +3,7 @@
 
 dev endpoint: `http://18.180.227.173:8545/`
 
-### DRStock `0x73C696a4FdDeA2177b6b21aC4cbff879DF7B576c`
+### DRFund `0x73C696a4FdDeA2177b6b21aC4cbff879DF7B576c`
 
 **Function**
       
