@@ -1,4 +1,3 @@
-```json
 [
 	{
 		"inputs": [
@@ -96,6 +95,12 @@
 				"indexed": false,
 				"internalType": "uint256",
 				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "notionalPrice",
 				"type": "uint256"
 			}
 		],
@@ -236,6 +241,11 @@
 				"type": "uint8"
 			},
 			{
+				"internalType": "uint256",
+				"name": "notionalPrice",
+				"type": "uint256"
+			},
+			{
 				"internalType": "uint8",
 				"name": "v",
 				"type": "uint8"
@@ -361,4 +371,3 @@
 		"type": "function"
 	}
 ]
-```
