@@ -23,17 +23,13 @@ dev endpoint: `http://18.180.227.173:8545/`
     * v
     * r
     * s
+
+
 ## 获取nonce
 - nonceOf(address): 获取某个地址的nonce值
     * address: 输入地址
-
-
-## 管理提钱
-- adminClaim(address payable account,uint256 amount)          
-    * account:  接收地址
-    * amount:  提取金额
-                            
-                            
+                      
+                      
 ## 根据索引获取投资者信息
 - getInvestor(uint256 index)   
     * index: 投资者索引
